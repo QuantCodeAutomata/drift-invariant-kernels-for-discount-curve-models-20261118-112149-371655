@@ -24,7 +24,7 @@ EXP1_GRIDS = [
 ]
 EXP1_Y_EVAL = np.array([0.3, 0.7, 1.3, 2.7, 4.1, 6.3, 9.0])  # y-points away from 0, unit: years
 EXP1_FD_STEP = 1e-5          # finite-difference step h for numerical derivatives, not specified in the paper
-EXP1_GAUSSIAN_SIGMA = 2.0    # length scale theta of the Sobolev-type proxy kernel exp(-(x-y)^2/(2 sigma^2)); proxy choice, see uncertainties in exp_1
+EXP1_GAUSSIAN_SIGMA = 2.0    # length scale theta of the Sobolev-type proxy kernel exp(-(x-y)^2/(2 sigma^2)); not specified in the paper, see Deviations from the paper
 
 # ---------------------------------------------------------------------------
 # Experiment 2: hypothesis space as affine combinations of flat discount
@@ -72,7 +72,7 @@ EXP4_A, EXP4_B, EXP4_C = 0.5, -0.03, 1.0        # kernel parameters, methodology
 EXP4_GRID = np.array([0.5, 1.0, 2.0, 5.0, 10.0])  # cash flow grid, methodology step 1
 EXP4_YTILDE0_INIT = 0.01   # initial discounted coefficients Ytilde_0^j, j=1..N, methodology step 4; not specified in the paper beyond positivity
 EXP4_D_FACTORS = 3        # number of Brownian motion factors d, methodology step 4
-EXP4_NU_SCALE = 0.05      # scale of volatility vectors nu_j (annualized), not prescribed by the paper (see uncertainties)
+EXP4_NU_SCALE = 0.05      # scale of volatility vectors nu_j (annualized), not prescribed by the paper (Remark 4.2 only requires nu_j in R^d)
 EXP4_NU_SEED = 20261118   # RNG seed for the volatility vectors nu_j, not specified in the paper
 EXP4_DT = 1.0 / 252       # Euler-Maruyama time step (one trading day), methodology step 5
 EXP4_N_STEPS = 252        # number of time steps over T=1 year, methodology step 5

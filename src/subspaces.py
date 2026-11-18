@@ -138,8 +138,8 @@ def pivoted_cholesky(K: np.ndarray, d: int, tol: float = 1e-12) -> list[int]:
     symmetric positive semidefinite matrix K, returning the first ``d``
     selected pivot indices (Filipovic and Schneider 2025, cited in Section
     3.3, p.8, for sub-grid selection; the specific algorithm of that
-    reference is not detailed in the present paper, see the uncertainties
-    of experiment 3). This is the textbook pivoted Cholesky algorithm: at
+    reference is not detailed in the present paper, see Deviations from
+    the paper). This is the textbook pivoted Cholesky algorithm: at
     each step, select the remaining index with the largest Schur-complement
     diagonal entry and eliminate it.
     """

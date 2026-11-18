@@ -64,7 +64,7 @@ def gaussian_rbf_kernel(x: np.ndarray, y: np.ndarray, sigma: float) -> np.ndarra
     diagonal." The Gaussian kernel shares this property (k(0,0)=1 holds, but
     k is not real analytic in the sense required by Theorem 3.3) and is used
     here only to demonstrate the failure of drift-invariance for a
-    smoothness-rewarding kernel, see the uncertainties of experiment 1.
+    smoothness-rewarding kernel (see Deviations from the paper).
     """
     x = np.asarray(x, dtype=float)
     y = np.asarray(y, dtype=float)

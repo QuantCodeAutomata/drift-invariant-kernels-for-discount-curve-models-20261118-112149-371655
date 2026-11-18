@@ -62,8 +62,7 @@ def eigen_ratio(
 ) -> np.ndarray:
     """Pointwise ratio alpha(g)(y) / g(y) used to test the eigenfunction
     property alpha(g) = lambda * g (3.7). Points where |g(y)| < tol_zero are
-    excluded to avoid division by (near) zero, as noted in the paper's
-    implementation notes for experiment 1.
+    excluded to avoid division by (near) zero and by the zeros of g.
     """
     alpha_values = np.asarray(alpha_values, dtype=float)
     func_values = np.asarray(func_values, dtype=float)

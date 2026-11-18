@@ -134,10 +134,10 @@ Monte Carlo sampling used for the simulation).
 File: `results/exp5_krr_lambda_c_results.json`,
 `results/exp5_krr_curves.png`.
 
-Parameters a=0.01, b=-0.03 (see "Deviations from the paper" for why a=0.5
-from the experiment description is replaced by a=0.01), grid
-x = [0.25,0.5,1,2,3,5,7,10,15,20,30] (N=11, per the experiment description),
-m=30 synthetic instruments, weights w_i=1.
+Parameters a=0.01, b=-0.03 (see "Deviations from the paper" for why the
+illustrative value a=0.5 is replaced by a=0.01), grid
+x = [0.25,0.5,1,2,3,5,7,10,15,20,30] (N=11), m=30 synthetic instruments,
+weights w_i=1.
 
 * For every tested lambda (0.01, 100, 1e5, 1e8 at c=1), `hat_p(0) = 1.0`
   exactly (to displayed precision).
@@ -238,5 +238,5 @@ drift-invariance of `p_0+W` via Proposition 2.2 all hold as in Example 3.7).
 
 ## Not reproduced
 
-Nothing is missing: every selected experiment (exp_1 through exp_6) is
-implemented, executed, and its results are saved in `results/`.
+Nothing is missing: all six experiments (1 through 6) are implemented,
+executed, and their results are saved in `results/`.
