@@ -134,10 +134,10 @@ Monte Carlo sampling used for the simulation).
 File: `results/exp5_krr_lambda_c_results.json`,
 `results/exp5_krr_curves.png`.
 
-Parameters a=0.5, b=-0.03, grid x = [0.25,0.5,1,2,3,5,7,10,15,20,30] not used;
-actual grid used is the N=11 grid in `src/config.py`
-(x=[0.25,0.5,1,2,3,5,7,10,15,20,30] per the experiment description), m=30
-synthetic instruments, weights w_i=1.
+Parameters a=0.01, b=-0.03 (see "Deviations from the paper" for why a=0.5
+from the experiment description is replaced by a=0.01), grid
+x = [0.25,0.5,1,2,3,5,7,10,15,20,30] (N=11, per the experiment description),
+m=30 synthetic instruments, weights w_i=1.
 
 * For every tested lambda (0.01, 100, 1e5, 1e8 at c=1), `hat_p(0) = 1.0`
   exactly (to displayed precision).
@@ -217,6 +217,17 @@ drift-invariance of `p_0+W` via Proposition 2.2 all hold as in Example 3.7).
   itself does not prescribe a specific grid for this verification (Corollary
   3.6 holds for every grid), so this substitution does not affect which
   property is being tested.
+* Experiment 5 uses a=0.01 instead of the a=0.5 suggested as an illustration
+  in the experiment's own methodology text. The paper (Sections 3.1-3.2) does
+  not fix a numeric value of a for this estimation illustration. With a=0.5 on
+  the 30-year, N=11 grid, `a*x_i*x_j` reaches 450, so `k_0` and the normal
+  matrix `C K_0 C^T` reach magnitudes above 1e40, far exceeding double
+  precision and making the regularization term `Lambda` numerically invisible
+  for any economically meaningful lambda. a=0.01 keeps `K_0` within double
+  precision (maximum entry about 1.3e3) while preserving every qualitative
+  property under test: `hat_p(0)=1`, membership of the estimate in `A`,
+  invariance of the estimator under `(c,lambda) -> (k c, k lambda)`, and
+  monotonicity of the pricing error in lambda/c.
 * None of the six experiments reports a paper table or figure number with
   specific published numeric values to match (Section 3 and Section 4 state
   exact mathematical identities rather than an empirical results table); the
