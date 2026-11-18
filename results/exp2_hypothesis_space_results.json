@@ -1,0 +1,40 @@
+{
+  "basis_rank": 5,
+  "N": 5,
+  "lambdas": [
+    -0.03,
+    0.22,
+    0.47,
+    0.97,
+    2.47,
+    4.97
+  ],
+  "affine_combination_max_abs_error": 1.1641532182693481e-10,
+  "hat_p0": 1.0,
+  "z_hat_sum": 1.0,
+  "flat_curve_decomposition_max_abs_error": 4.7630788202468466e-12,
+  "pricing_error": 1.2954999853433678e-08,
+  "n_instruments": 20,
+  "instrument_types": [
+    "zero@5",
+    "zero@2",
+    "zero@2",
+    "coupon1.67@2",
+    "zero@5",
+    "coupon3.64@5",
+    "coupon4.11@1",
+    "coupon4.44@1",
+    "zero@2",
+    "zero@10",
+    "zero@2",
+    "coupon1.29@5",
+    "coupon5.84@10",
+    "zero@1",
+    "coupon4.60@1",
+    "zero@2",
+    "coupon5.30@1",
+    "zero@1",
+    "zero@10",
+    "coupon4.01@1"
+  ]
+}

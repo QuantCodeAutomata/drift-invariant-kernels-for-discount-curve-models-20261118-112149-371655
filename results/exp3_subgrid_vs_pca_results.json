@@ -1,0 +1,52 @@
+{
+  "k0_min": 0.2840254166877414,
+  "k0_max": 28000.125926231576,
+  "residual_subgrid_hardcoded": {
+    "indices": [
+      1,
+      4,
+      7
+    ],
+    "status": "ok",
+    "residual": 1.2998704896909403e-10
+  },
+  "residual_subgrid_random": [
+    {
+      "indices": [
+        0,
+        6,
+        9
+      ],
+      "status": "ok",
+      "residual": 1.7232887333517235e-10
+    },
+    {
+      "indices": [
+        4,
+        7,
+        8
+      ],
+      "status": "ok",
+      "residual": 1.5406422853012012e-10
+    }
+  ],
+  "residual_pca": {
+    "d": 3,
+    "status": "ok",
+    "residual": 0.010985201555185514
+  },
+  "pivoted_cholesky": {
+    "indices": [
+      9,
+      8,
+      6
+    ],
+    "x_values": [
+      3.2,
+      2.9,
+      2.3
+    ],
+    "status": "ok",
+    "residual": 1.7232887333517235e-10
+  }
+}

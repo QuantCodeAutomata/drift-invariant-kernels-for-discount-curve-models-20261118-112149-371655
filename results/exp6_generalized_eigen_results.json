@@ -1,0 +1,30 @@
+{
+  "alpha_h1_max_abs_error": 6.142144570731034e-10,
+  "alpha_h2_max_abs_error": 2.7883402253792156e-09,
+  "jordan_block_max_abs_error": 4.3593129106511697e-11,
+  "jordan_block_matrix": [
+    [
+      0.9999999999994998,
+      1.0000000000084106
+    ],
+    [
+      1.0296878445961493e-11,
+      1.0000000000435931
+    ]
+  ],
+  "min_taylor_residual_after_2_order_exact_fit": 0.006102140061430669,
+  "nonlinear_lstsq_residual": 0.8946632089941641,
+  "nonlinear_lstsq_relative_residual": 3.1868451282707635e-05,
+  "nonlinear_lstsq_params_x1_x2_c1_c2": [
+    1.4,
+    4.0,
+    0.9572603595186645,
+    -1.63642321538249e-05
+  ],
+  "proposition_2_2_conditions": {
+    "p0(0)=1": true,
+    "h1(0)=0": true,
+    "h2(0)=0": true,
+    "eta(p0)(0)=0": true
+  }
+}
